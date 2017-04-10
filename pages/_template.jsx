@@ -2,75 +2,109 @@ import React, { PropTypes } from 'react';
 import Headroom from 'react-headroom';
 import { Link } from 'react-router';
 import { prefixLink } from 'gatsby-helpers';
+import classNames from 'classNames';
 
 import '../css/base.scss';
 
 const navbarHeight = 54;
 
-const IndexContainer = ({ children }) => (
-  <div>
-    <Headroom
-      wrapperStyle={{
-        maxHeight: navbarHeight
-      }}
-    >
-      <div className="navbar">
-        <Link
-          to={prefixLink('/')}
-          className="link home"
-          style={{
-            display: 'inline-block',
-            color: 'white',
-            textDecoration: 'none',
+export default class IndexContainer extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      open: false,
+    };
+
+    this._handleClick = this._handleClick.bind(this);
+  }
+
+  _handleClick(e) {
+    this.setState({
+      open: !this.state.open,
+    });
+  }
+
+  render () {
+    return (
+      <div>
+        <Headroom
+          wrapperStyle={{
+            maxHeight: navbarHeight 
           }}
         >
-          BTC
-        </Link>
-        <Link
-          to={prefixLink('/officers')}
-          className="link officers"
-          style={{
-            display: 'inline-block',
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          Officers
-        </Link>
-        <div 
-          className="committees"
-          style={{
-            display: 'inline-block'
-          }}>
-          Committees
-          <Link
-            to={prefixLink('/research')}
-            className="link research"
-            style={{
-              color: 'white',
-              display: 'none',
-            }}
-          >
-            Officers
-          </Link>
-          <Link
-            to={prefixLink('/scaleup')}
-            className="link scaleup"
-            style={{
-              color: 'white',
-              display: 'none',
-            }}
-          >
-            Officers
-          </Link>
+          <div className={classNames('navbar', { 'navbar--open': this.state.open})}> 
+            <Link
+              to={prefixLink('/')}
+              className="link home"
+            >
+              BTC
+            </Link>
+            <button 
+              className={classNames('hamburger', 'hamburger--collapse', { 'is-active': this.state.open})} 
+              type="button"
+              onClick={this._handleClick}
+            >
+              <span className="hamburger-box"> 
+                <span className="hamburger-inner"></span>
+              </span>
+            </button>
+            <div className="container">
+              <div className="container__media">
+                <a href="http://www.facebook.com"><i className="fa fa-facebook"></i></a>
+                <a href="http://www.instagram.com"><i className="fa fa-instagram"></i></a>
+                <a href="http://www.twitter.com"><i className="fa fa-twitter"></i></a>
+              </div>
+              <Link
+                to={prefixLink('/officers/')}
+                className="link officers"
+                onClick={this._handleClick} // TODO: HOW TO CHANGE THIS SO NAVBAR WORKS WHEN OFFICERS IS CLICKED NORMALLY 
+              >
+                Officers
+              </Link>
+              <div 
+                className="committees"
+                >
+                Committees
+                <div className="dropdown">
+                  <Link
+                    to={prefixLink('/research/')}
+                    className="link--committees"
+                  >
+                    Research
+                  </Link>
+                  <Link
+                    to={prefixLink('/scaleup/')}
+                    className="link--committees"
+                  >
+                    Scale-Up
+                  </Link>
+                </div>
+              </div>
+              <Link
+                to={prefixLink('/research/')}
+                className="link--hamburger"
+                onClick={this._handleClick}
+              >
+                Research
+              </Link>
+              <Link
+                to={prefixLink('/scaleup/')}
+                className="link--hamburger"
+                onClick={this._handleClick}
+              >
+                Scale-Up
+              </Link>
+            </div>
+          </div>
+        </Headroom>
+        <div>
+          {this.props.children}
         </div>
       </div>
-    </Headroom>
-    <div>
-      {children}
-    </div>
-  </div>
-);
+    )
+  }
+};
 
 IndexContainer.propTypes = {
   children: PropTypes.element,
@@ -79,6 +113,3 @@ IndexContainer.propTypes = {
 IndexContainer.defaultProps = {
   children: null,
 };
-
-export default IndexContainer;
-

@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import Headroom from 'react-headroom';
 import { Link } from 'react-router';
 import { prefixLink } from 'gatsby-helpers';
-import classNames from 'classNames';
+import classNames from 'classnames';
 
 import '../css/base.scss';
 
@@ -22,6 +22,12 @@ export default class IndexContainer extends React.Component {
   _handleClick(e) {
     this.setState({
       open: !this.state.open,
+    });
+  }
+
+  _handleClose(e) {
+    this.setState({
+      open: false,
     });
   }
 
@@ -58,7 +64,7 @@ export default class IndexContainer extends React.Component {
               <Link
                 to={prefixLink('/officers/')}
                 className="link officers"
-                onClick={this._handleClick} // TODO: HOW TO CHANGE THIS SO NAVBAR WORKS WHEN OFFICERS IS CLICKED NORMALLY 
+                onClick={this._handleClose} // TODO: HOW TO CHANGE THIS SO NAVBAR WORKS WHEN OFFICERS IS CLICKED NORMALLY 
               >
                 Officers
               </Link>
@@ -70,12 +76,14 @@ export default class IndexContainer extends React.Component {
                   <Link
                     to={prefixLink('/research/')}
                     className="link--committees"
+                    onClick={this._handleClose}
                   >
                     Research
                   </Link>
                   <Link
                     to={prefixLink('/scaleup/')}
                     className="link--committees"
+                    onClick={this._handleClose}
                   >
                     Scale-Up
                   </Link>
@@ -84,14 +92,14 @@ export default class IndexContainer extends React.Component {
               <Link
                 to={prefixLink('/research/')}
                 className="link--hamburger"
-                onClick={this._handleClick}
+                onClick={this._handleClose}
               >
                 Research
               </Link>
               <Link
                 to={prefixLink('/scaleup/')}
                 className="link--hamburger"
-                onClick={this._handleClick}
+                onClick={this._handleClose}
               >
                 Scale-Up
               </Link>

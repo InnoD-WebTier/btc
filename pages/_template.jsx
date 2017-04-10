@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import Headroom from 'react-headroom';
 import { Link } from 'react-router';
 import { prefixLink } from 'gatsby-helpers';
-import classNames from 'classnames';
+import classnames from 'classnames';
 
 import '../css/base.scss';
 
@@ -39,7 +39,7 @@ export default class IndexContainer extends React.Component {
             maxHeight: navbarHeight 
           }}
         >
-          <div className={classNames('navbar', { 'navbar--open': this.state.open})}> 
+          <div className={classnames('navbar', { 'navbar--open': this.state.open})}> 
             <Link
               to={prefixLink('/')}
               className="link home"
@@ -47,7 +47,7 @@ export default class IndexContainer extends React.Component {
               BTC
             </Link>
             <button 
-              className={classNames('hamburger', 'hamburger--collapse', { 'is-active': this.state.open})} 
+              className={classnames('hamburger', 'hamburger--collapse', { 'is-active': this.state.open})} 
               type="button"
               onClick={this._handleClick}
             >

@@ -4,7 +4,7 @@
 }
 
 .navbar {
-  font-size: 18px;
+  font-size: 20px;
   background-color: white; 
   text-decoration: none;   
   color: black;
@@ -18,7 +18,7 @@
   .hamburger, .link--hamburger { display: none; }
 
   .link {
-    @include navbar-spacing(30px);
+    @include navbar-spacing(20px);
     text-decoration: none;
     display: inline-block;
     line-height: 54px;
@@ -40,7 +40,7 @@
   }
 
   .container {
-    @include navbar-spacing(30px);
+    @include navbar-spacing(20px);
     display: inline-block;
     float: right;
     
@@ -50,41 +50,6 @@
       i {
         margin-left: 10px;
         margin-right: 10px;
-      }
-    }
-  }
-  
-  .committees {
-    display: inline-block;
-    color: black;
-    
-    .dropdown {
-      display: none;
-      position: absolute;
-    }
-
-    .link--committees { display: none; }
-
-    &:hover {
-      cursor: default;
-      
-      .dropdown {
-        display: block;
-        box-shadow: 0px 1px 1px 0px rgba(0,0,0,1);
-        width: 120%;
-
-        .link--committees {
-          color: black;
-          transition: color 150ms;
-          text-decoration: none;
-          display: block;
-          margin: 10px;
-
-          &:hover {
-            cursor: pointer;
-            color: gray;
-          }
-        }
       }
     }
   }
@@ -101,10 +66,8 @@
       text-align: right;
 
       .container__media {
-        display: block;
+        display: inline-block;
       }
-
-      .committees { display: none; }
       
       .link { 
         display: block; 

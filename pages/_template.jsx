@@ -17,6 +17,7 @@ export default class IndexContainer extends React.Component {
     };
 
     this._handleClick = this._handleClick.bind(this);
+    this._handleClose = this._handleClose.bind(this);
   }
 
   _handleClick(e) {
@@ -62,46 +63,26 @@ export default class IndexContainer extends React.Component {
                 <a href="http://www.twitter.com"><i className="fa fa-twitter"></i></a>
               </div>
               <Link
+                to={prefixLink('/tech/')}
+                className="link"
+                onClick={this._handleClose} 
+              >
+                TECH
+              </Link>
+              <Link
                 to={prefixLink('/officers/')}
-                className="link officers"
-                onClick={this._handleClose} // TODO: HOW TO CHANGE THIS SO NAVBAR WORKS WHEN OFFICERS IS CLICKED NORMALLY 
-              >
-                Officers
-              </Link>
-              <div 
-                className="committees"
-                >
-                Committees
-                <div className="dropdown">
-                  <Link
-                    to={prefixLink('/research/')}
-                    className="link--committees"
-                    onClick={this._handleClose}
-                  >
-                    Research
-                  </Link>
-                  <Link
-                    to={prefixLink('/scaleup/')}
-                    className="link--committees"
-                    onClick={this._handleClose}
-                  >
-                    Scale-Up
-                  </Link>
-                </div>
-              </div>
-              <Link
-                to={prefixLink('/research/')}
-                className="link--hamburger"
+                className="link"
                 onClick={this._handleClose}
               >
-                Research
+                TEAM
               </Link>
+
               <Link
-                to={prefixLink('/scaleup/')}
-                className="link--hamburger"
-                onClick={this._handleClose}
+                to={prefixLink('/contact/')}
+                className="link"
+                onClick={this._handleClose} 
               >
-                Scale-Up
+                CONTACT
               </Link>
             </div>
           </div>

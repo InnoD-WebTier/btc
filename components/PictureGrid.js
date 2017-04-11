@@ -1,15 +1,14 @@
 import React, { PropTypes } from 'react';
-import Picture from '../components/Picture';
 
-const PictureGrid = (props) => {
-  const pictures = props.pictureURLs.map((url) =>
-    <Picture key={url} url={url} />,
-  );
+const PictureGrid = () => {
+  const pictures = [{
+    url: 'blah',
+  }];
 
   return (
     <div className="PictureGrid">
       PictureGrid!
-      {pictures}
+      {pictures[0].url}
     </div>
   );
 };

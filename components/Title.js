@@ -1,8 +1,8 @@
 import React, { PropTypes } from 'react';
 
-const Title = (props) => (
+const Title = ({ text }) => (
   <div className="title">
-    {props.text}
+    {text}
     <div className="title__separator" />
   </div>
 );

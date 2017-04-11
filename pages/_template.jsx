@@ -2,75 +2,98 @@ import React, { PropTypes } from 'react';
 import Headroom from 'react-headroom';
 import { Link } from 'react-router';
 import { prefixLink } from 'gatsby-helpers';
+import classnames from 'classnames';
 
 import '../css/base.scss';
 
 const navbarHeight = 54;
 
-const IndexContainer = ({ children }) => (
-  <div>
-    <Headroom
-      wrapperStyle={{
-        maxHeight: navbarHeight
-      }}
-    >
-      <div className="navbar">
-        <Link
-          to={prefixLink('/')}
-          className="link home"
-          style={{
-            display: 'inline-block',
-            color: 'white',
-            textDecoration: 'none',
+export default class IndexContainer extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      open: false,
+    };
+
+    this._handleClick = this._handleClick.bind(this);
+    this._handleClose = this._handleClose.bind(this);
+  }
+
+  _handleClick(e) {
+    this.setState({
+      open: !this.state.open,
+    });
+  }
+
+  _handleClose(e) {
+    this.setState({
+      open: false,
+    });
+  }
+
+  render () {
+    return (
+      <div>
+        <Headroom
+          wrapperStyle={{
+            maxHeight: navbarHeight 
           }}
         >
-          BTC
-        </Link>
-        <Link
-          to={prefixLink('/officers')}
-          className="link officers"
-          style={{
-            display: 'inline-block',
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          Officers
-        </Link>
-        <div 
-          className="committees"
-          style={{
-            display: 'inline-block'
-          }}>
-          Committees
-          <Link
-            to={prefixLink('/research')}
-            className="link research"
-            style={{
-              color: 'white',
-              display: 'none',
-            }}
-          >
-            Officers
-          </Link>
-          <Link
-            to={prefixLink('/scaleup')}
-            className="link scaleup"
-            style={{
-              color: 'white',
-              display: 'none',
-            }}
-          >
-            Officers
-          </Link>
+          <div className={classnames('navbar', { 'navbar--open': this.state.open})}> 
+            <Link
+              to={prefixLink('/')}
+              className="link home"
+            >
+              BTC
+            </Link>
+            <button 
+              className={classnames('hamburger', 'hamburger--collapse', { 'is-active': this.state.open})} 
+              type="button"
+              onClick={this._handleClick}
+            >
+              <span className="hamburger-box"> 
+                <span className="hamburger-inner"></span>
+              </span>
+            </button>
+            <div className="container">
+              <div className="container__media">
+                <a href="http://www.facebook.com"><i className="fa fa-facebook"></i></a>
+                <a href="http://www.instagram.com"><i className="fa fa-instagram"></i></a>
+                <a href="http://www.twitter.com"><i className="fa fa-twitter"></i></a>
+              </div>
+              <Link
+                to={prefixLink('/tech/')}
+                className="link"
+                onClick={this._handleClose} 
+              >
+                TECH
+              </Link>
+              <Link
+                to={prefixLink('/officers/')}
+                className="link"
+                onClick={this._handleClose}
+              >
+                TEAM
+              </Link>
+
+              <Link
+                to={prefixLink('/contact/')}
+                className="link"
+                onClick={this._handleClose} 
+              >
+                CONTACT
+              </Link>
+            </div>
+          </div>
+        </Headroom>
+        <div>
+          {this.props.children}
         </div>
       </div>
-    </Headroom>
-    <div>
-      {children}
-    </div>
-  </div>
-);
+    )
+  }
+};
 
 IndexContainer.propTypes = {
   children: PropTypes.element,
@@ -79,6 +102,3 @@ IndexContainer.propTypes = {
 IndexContainer.defaultProps = {
   children: null,
 };
-
-export default IndexContainer;
-

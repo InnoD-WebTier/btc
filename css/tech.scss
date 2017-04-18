@@ -1,12 +1,12 @@
-.tech{
+.tech {
 	.title {
 		text-align: center;
 		font-size: 2em;
     margin-bottom: 1%;
 	}
-	.section-1{
-    .hero{
-  		.picture{
+	.section-1 {
+    .hero {
+  		.picture {
         	position: absolute;
 
   			img {
@@ -17,30 +17,30 @@
   		  }
   	  }
 
-      .title{
+      .title {
         top:138px;
         color: white;
       }
       margin-bottom: 20%;
     }
-    .section-container{
+    .section-container {
       margin-left: 10%;
       margin-right: 10%;
       margin-bottom: 3%;
       position: relative;
 
-      .section-subhead{
+      .section-subhead {
         font-size: 1.5em;
       }
 
-      .section-info{
+      .section-info {
         margin-left: 2%;
 
-        .picture{
+        .picture {
           margin-left: 30%;
           display: block;
 
-          img{
+          img {
             width: 50%;
             height: auto;
           }
@@ -49,9 +49,9 @@
     }
   }
 
-  .section-2{
-    .hero{
-      .picture{
+  .section-2 {
+    .hero {
+      .picture {
           position: absolute;
         img {
           object-fit: cover;
@@ -59,30 +59,30 @@
           max-height: 300px;
         }
       }
-      .title{
+      .title {
         top:138px;
         color: white;
       }
       margin-bottom: 20%;
     }
-      .section-container{
+      .section-container {
         margin-left: 10%;
         margin-right: 10%;
         margin-bottom: 3%;
         position: relative;
 
-        .section-subhead{
+        .section-subhead {
           font-size: 1.5em;
         }
 
-        .section-info{
+        .section-info {
           margin-left: 2%;
 
-          .picture{
+          .picture {
             margin-left: 30%;
             display: block;
 
-            img{
+            img {
               width: 10em;
               height: auto;
             }
@@ -92,25 +92,25 @@
   }
 }
 
-@media (max-width : 400px){
-  .tech{
-    .section-1{
-      .hero{
+@media (max-width : 400px) {
+  .tech {
+    .section-1 {
+      .hero {
         margin-bottom: 58%;
-        .picture{
+        .picture {
           position:absolute;
-          img{
+          img {
             max-height: 250px;
           }
         }
       }
     }
-    .section-2{
-      .hero{
+    .section-2 {
+      .hero {
         margin-bottom: 58%;
-        .picture{
+        .picture {
           position:absolute;
-          img{
+          img {
             max-height: 250px;
           }
         }
@@ -119,27 +119,27 @@
   }
 }
 
-@media (max-width : 800px){
-  .tech{
+@media (max-width : 800px) {
+  .tech {
     .section-1{
-      .hero{
+      .hero {
         margin-bottom: 28%;
-        .picture{
+        .picture {
           position:absolute;
-          img{
+          img {
             max-height: 250px;
           }
         }
       }
     }
-    .section-2{
-      .hero{
+    .section-2 {
+      .hero {
         margin-bottom: 28%;
 
-        .picture{
+        .picture {
           position:absolute;
 
-          img{
+          img {
             max-height: 250px;
           }
         }
@@ -148,48 +148,47 @@
   }
 }
 
-@media (max-width : 1080px){
-  .tech{
-    .section-1{
-      .hero{
+@media (max-width : 1080px) {
+  .tech {
+    .section-1 {
+      .hero {
         margin-bottom: 25%;
 
-        .picture{
+        .picture {
           position:absolute;
 
-          img{
+          img {
             max-height: 500px;
           }
         }
       }
-      .section-container{
-        .section-info{
-          .picture{
-            img{
+      .section-container {
+        .section-info {
+          .picture {
+            img {
               max-height: 500px;
-
             }
           }
         }
       }
     }
-    .section-2{
-      .hero{
+    .section-2 {
+      .hero {
         margin-bottom: 25%;
 
-        .picture{
+        .picture {
           position:absolute;
 
-          img{
+          img {
             width: 300px;
           }
         }
-        .section-container{
-          .section-info{
+        .section-container {
+          .section-info {
 
-            .picture{
+            .picture {
 
-              img{
+              img {
                 width: 1000px;
                 height: auto;
               }
@@ -201,46 +200,46 @@
   }
 }
 
-@media (max-width : 1500px){
-  .tech{
-    .section-1{
-      .hero{
+@media (max-width : 1500px) {
+  .tech {
+    .section-1 {
+      .hero {
         margin-bottom: 25%;
 
-        .picture{
+        .picture {
           position:absolute;
 
-          img{
+          img {
             max-height: 300px;
           }
         }
       }
-      .section-container{
-        .section-info{
-          .picture{
+      .section-container {
+        .section-info {
+          .picture {
 
-            img{
+            img {
               width: 500px;
             }
           }
         }
       }
     }
-    .section-2{
-      .hero{
+    .section-2 {
+      .hero {
         margin-bottom: 25%;
 
-        .picture{
+        .picture {
           position:absolute;
 
-          img{
+          img {
             max-height: 300px;
           }
         }
-        .section-container{
-          .section-info{
-            .picture{
-              img{
+        .section-container {
+          .section-info {
+            .picture {
+              img {
                 width: 350px;
               }
             }

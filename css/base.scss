@@ -2,7 +2,7 @@
 @import "./vendors/hamburgers.scss";
 @import 'navbar.scss';
 @import 'home.scss';
-@import 'officers.scss';
+@import 'team.scss';
 
 *,
 *:after,
@@ -21,3 +21,6 @@ body {
   height: 100%;
 }
 
+.not-found {
+  text-align: center;
+}

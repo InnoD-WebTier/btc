@@ -1,11 +1,11 @@
-# Basic Gatsby Starter with Automatic Linting
+# Biofuels Technology Club
 ---
-Minimal starter with linting
+Built by [Innovative Design](http://innovativedesign.club)
 
-# Installation
+# Instructions
 ---
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new clean gh:cle1994/gatsby-eslint-starter
-```
+This website was built with [gatsbyjs](https://github.com/gatsbyjs).  You will need
+to become somewhat familiar with gatsby in order to maintain this website.  You
+can read up on how to install gatsby through `npm` or `yarn` in the documentation.
 
+For future major changes that are out of your scope, please submit another request on the InnoD website.

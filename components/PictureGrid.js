@@ -1,24 +1,25 @@
 import React, { PropTypes } from 'react';
 import Picture from '../components/Picture';
 
-const PictureGrid = (props) => {
-  const pictureItems = props.pictures.map((picture) =>
-    <Picture
-      key={picture.name}
-      url={picture.url}
-      name={picture.name}
-      title={picture.title}
-    />,
-  );
-  return (
-    <div className="pictureGrid">
-      {pictureItems}
-    </div>
-  );
-};
+const PictureGrid = ({ pictures }) => (
+  <div className="pictureGrid">
+    {pictures.map((picture) => (
+      <Picture
+        key={picture.name}
+        url={picture.url}
+        name={picture.name}
+        title={picture.title}
+      />
+      ),
+    )}
+  </div>
+);
 
 PictureGrid.propTypes = {
-  pictures: PropTypes.arrayOf(React.PropTypes.object).isRequired,
+  pictures: PropTypes.arrayOf(PropTypes.shape({
+    url: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+  })).isRequired,
 };
 
 export default PictureGrid;

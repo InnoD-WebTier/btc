@@ -3,7 +3,7 @@ import React, { PropTypes } from 'react';
 const Picture = (props) => (
   <div className="picture">
     <div className="picture__container">
-      <img src={props.url} alt={props.url} />
+      <img src={props.url} alt={props.name} />
       <div className="picture__overlay" />
       <div className="picture__name">
         {props.name}

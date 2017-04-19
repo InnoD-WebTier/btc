@@ -34,7 +34,7 @@ const IndexComponent = () => (
           biofuels research into a scaled bioenergy manufacturing plant and ultimately bring clean
           and renewable energy back into UC Berkeley and the surrounding city.
         </div>
-        <div className="subtitle">Values</div>
+        <div className="subtitle values">Values</div>
         <div className="section__content">
           <b>Ingenuity</b> - As students, we pride ourselves in exploring the unexplored.
           Surrounded by the brilliance and inventiveness rooted in our university culture,

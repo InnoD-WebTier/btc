@@ -2,7 +2,7 @@ import React from 'react';
 import PictureGrid from '../components/PictureGrid';
 import Title from '../components/Title';
 
-const officers = () => (
+const team = () => (
   <div className="officers">
     <Title text="MEET OUR TEAM" />
     <PictureGrid
@@ -55,5 +55,5 @@ const officers = () => (
   </div>
 );
 
-export default officers;
+export default team;
 

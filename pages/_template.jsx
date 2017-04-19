@@ -61,6 +61,9 @@ export default class IndexContainer extends React.Component {
                 <a href="http://www.facebook.com"><i className="fa fa-facebook"></i></a>
                 <a href="http://www.instagram.com"><i className="fa fa-instagram"></i></a>
                 <a href="http://www.twitter.com"><i className="fa fa-twitter"></i></a>
+                <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">
+                  <i className="fa fa-envelope"></i>
+                </a>
               </div>
               <Link
                 to={prefixLink('/tech/')}
@@ -70,19 +73,11 @@ export default class IndexContainer extends React.Component {
                 TECH
               </Link>
               <Link
-                to={prefixLink('/tech/')}
+                to={prefixLink('/team/')}
                 className="link"
                 onClick={this._handleClose}
               >
                 TEAM
-              </Link>
-
-              <Link
-                to={prefixLink('/contact/')}
-                className="link"
-                onClick={this._handleClose} 
-              >
-                CONTACT
               </Link>
             </div>
           </div>

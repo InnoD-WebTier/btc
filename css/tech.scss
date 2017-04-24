@@ -1,27 +1,29 @@
 .tech {
-	.title {
-		text-align: center;
-		font-size: 2em;
+  .title {
+    text-align: center;
+    font-size: 2em;
     margin-bottom: 1%;
-	}
-	.section-1 {
-    .hero {
-  		.picture {
-        	position: absolute;
+  }
 
-  			img {
-  				object-fit: cover;
+  .section-1 {
+    .hero {
+      margin-bottom: 20%;
+
+      .picture {
+        position: absolute;
+
+        img {
+          object-fit: cover;
           width: 100%;
           height: auto;
           max-height: 300px;
-  		  }
-  	  }
+        }
+      }
 
       .title {
-        top:138px;
+        top: 138px;
         color: white;
       }
-      margin-bottom: 20%;
     }
 
     .section-container {
@@ -101,7 +103,6 @@
 }
 
 @media (max-width : 400px) {
-
   .tech {
     .section-1 {
       .hero {
@@ -136,10 +137,9 @@
     .section-2 {
       .hero {
         margin-bottom: 58%;
-        
+
         .picture {
           position:absolute;
-          
           img {
             max-height: 250px;
           }
@@ -163,15 +163,15 @@
 }
 
 @media (max-width : 800px) {
-  
+
   .tech {
-    .section-1{
+    .section-1 {
       .hero {
         margin-bottom: 28%;
-        
+
         .picture {
           position:absolute;
-          
+
           img {
             max-height: 250px;
           }
@@ -257,7 +257,7 @@
             width: 300px;
           }
         }
-        
+
         .section-container {
           .section-info {
             .picture {
@@ -291,6 +291,7 @@
           }
         }
       }
+
       .section-container {
         .section-info {
           .picture {
@@ -302,6 +303,7 @@
         }
       }
     }
+
     .section-2 {
       .hero {
         margin-bottom: 25%;
@@ -313,6 +315,7 @@
             max-height: 300px;
           }
         }
+
         .section-container {
           .section-info {
             .picture {

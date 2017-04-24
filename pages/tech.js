@@ -7,10 +7,10 @@ import { prefixLink } from 'gatsby-helpers'; // eslint-disable-line
 const tech = () => (
   <div className="tech">
     <Title text="TECH" />
+    <hr />
     <div className="section-1">
       <div className="hero">
-        <Picture url={prefixLink('/img/Berkeley 1.jpg')} />
-        <Title text="RESEARCH" />
+        <Title text="RESEARCH:" />
       </div>
       <div className="section-container">
         <div className="section-subhead">
@@ -78,8 +78,7 @@ const tech = () => (
     </div>
     <div className="section-2">
       <div className="hero">
-        <Picture url={prefixLink('/img/Berkeley 1.jpg')} />
-        <Title text="PILOT PLANT" />
+        <Title text="PILOT PLANT:" />
       </div>
       <div className="section-container">
         <div className="section-subhead">
@@ -170,7 +169,6 @@ const tech = () => (
           purposes or product/waste collection, is also important to us. With those mindsets, we
           create safe plans for our team’s logistical needs.
           <Picture url={prefixLink('/img/blackbuc.png')} />
-
         </div>
       </div>
     </div>

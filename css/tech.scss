@@ -13,12 +13,12 @@
     margin-bottom: -1%;
   }
 
-  .hero{
+  .hero {
     margin-top: 8%;
     margin-bottom: -30%;
   }
 
-  .section-1 {
+  .section--1 {
     .title {
       color: #1e232d;
       font-size: 1.8em;
@@ -28,17 +28,17 @@
       margin-top: -5%;
     }
   }
-    .section-container {
+    .section__container {
       margin-left: 10%;
       margin-right: 10%;
       margin-bottom: 3%;
       position: relative;
 
-      .section-subhead {
+      .section__subhead {
         font-size: 1.5em;
       }
 
-      .section-info {
+      .section__info {
         margin-left: 2%;
 
         .picture {
@@ -55,7 +55,7 @@
       }
     }
 
-  .section-2 {
+  .section--2 {
       .title {
         color: #1e232d;
         font-size: 1.8em;
@@ -66,17 +66,17 @@
       }
     }
 
-      .section-container {
+      .section__container {
         margin-left: 10%;
         margin-right: 10%;
         margin-bottom: 3%;
         position: relative;
 
-        .section-subhead {
+        .section__subhead {
           font-size: 1.5em;
         }
 
-        .section-info {
+        .section__info {
           margin-left: 2%;
 
           .picture {
@@ -97,7 +97,7 @@
 
 @media (max-width : 400px) {
   .tech {
-    .section-1 {
+    .section--1 {
       .hero {
         width: 100%;
 
@@ -110,10 +110,10 @@
         }
       }
 
-      .section-container {
+      .section__container {
         margin-top: 20%;
 
-        .section-info {
+        .section__info {
           .picture {
             margin-right: 10%;
 
@@ -122,11 +122,10 @@
             }
           }
         }
-
       }
     }
 
-    .section-2 {
+    .section--2 {
       .hero {
         .picture {
           position:absolute;
@@ -136,8 +135,8 @@
         }
       }
 
-      .section-container {
-        .section-info {
+      .section__container {
+        .section__info {
           .picture {
             margin-top: 2%;
             margin-bottom: 2%;
@@ -155,7 +154,7 @@
 @media (max-width : 800px) {
 
   .tech {
-    .section-1 {
+    .section--1 {
       .hero {
         .picture {
           position:absolute;
@@ -166,8 +165,8 @@
         }
       }
 
-      .section-container {
-        .section-info {
+      .section__container {
+        .section__info {
           .picture {
             margin-top: 2%;
             margin-bottom: 2%;
@@ -179,7 +178,7 @@
         }
       }
     }
-    .section-2 {
+    .section--2 {
       .hero {
         margin-bottom: 28%;
 
@@ -192,8 +191,8 @@
         }
       }
 
-      .section-container {
-        .section-info {
+      .section__container {
+        .section__info {
           .picture {
             margin-top: 2%;
             margin-bottom: 2%;
@@ -210,7 +209,7 @@
 
 @media (max-width : 1080px) {
   .tech {
-    .section-1 {
+    .section--1 {
       .hero {
         .picture {
           position:absolute;
@@ -220,8 +219,8 @@
           }
         }
       }
-      .section-container {
-        .section-info {
+      .section__container {
+        .section__info {
           .picture {
             margin-top: 2%;
             margin-bottom: 2%;
@@ -233,7 +232,7 @@
         }
       }
     }
-    .section-2 {
+    .section--2 {
       .hero {
         .picture {
           position:absolute;
@@ -243,8 +242,8 @@
           }
         }
 
-        .section-container {
-          .section-info {
+        .section__container {
+          .section__info {
             .picture {
               margin-top: 2%;
               margin-bottom: 2%;
@@ -264,7 +263,7 @@
 @media (max-width : 1500px) {
 
   .tech {
-    .section-1 {
+    .section--1 {
       .hero {
         margin-bottom: 3%;
 
@@ -277,8 +276,8 @@
         }
       }
 
-      .section-container {
-        .section-info {
+      .section__container {
+        .section__info {
           .picture {
             img {
               width: 500px;
@@ -288,7 +287,7 @@
       }
     }
 
-    .section-2 {
+    .section--2 {
       background-color: #F7F7F7;
       .hero {
         margin-bottom: 3%;
@@ -301,9 +300,9 @@
           }
         }
 
-        .section-container {
+        .section__container {
           margin-top: 10%;
-          .section-info {
+          .section__info {
             .picture {
               img {
                 height: 350px;

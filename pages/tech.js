@@ -7,26 +7,26 @@ import { prefixLink } from 'gatsby-helpers'; // eslint-disable-line
 const tech = () => (
   <div className="tech">
     <Title text="TECH" />
-    <div className="section-1">
+    <hr />
+    <div className="section--1">
       <div className="hero">
-        <Picture url={prefixLink('/img/Berkeley 1.jpg')} />
-        <Title text="RESEARCH" />
+        <Title text="RESEARCH:" />
       </div>
-      <div className="section-container">
-        <div className="section-subhead">
+      <div className="section__container">
+        <div className="section__subhead">
           I. Basics of Transesterification
         </div>
-        <div className="section-info">
+        <div className="section__info">
           Vegetable oil, also called triglyceride, is transesterified with methanol to
           produce fatty acid methyl esters, or biodiesel, and byproduct glycerin.
           <Picture url={prefixLink('/img/process .png')} />
         </div>
       </div>
-      <div className="section-container">
-        <div className="section-subhead">
+      <div className="section__container">
+        <div className="section__subhead">
           II. Titration of Sample
         </div>
-        <div className="section-info">
+        <div className="section__info">
           Used cooking oil contain high levels of free fatty acids (FFAs), which hinders
           the efficiency of the transesterification reaction. FFAs can be removed from the
           reaction by titration with alkaline base. This titration produces soap, which is
@@ -34,11 +34,11 @@ const tech = () => (
           <Picture url={prefixLink('/img/titrationsample.jpg')} />
         </div>
       </div>
-      <div className="section-container">
-        <div className="section-subhead">
+      <div className="section__container">
+        <div className="section__subhead">
           III. Reaction (Acid, Base, Reaction Parameters)
         </div>
-        <div className="section-info">
+        <div className="section__info">
           The transesterification of triglycerides is generally very slow and require the use of
           catalysts. Specifically for us, we work with potassium hydroxide, an alkaline base. Some
           reaction parameters we have studied in the lab so far include types and amount of
@@ -48,11 +48,11 @@ const tech = () => (
           <Picture url={prefixLink('/img/layers.png')} />
         </div>
       </div>
-      <div className="section-container">
-        <div className="section-subhead">
+      <div className="section__container">
+        <div className="section__subhead">
           IV. Water Washing
         </div>
-        <div className="section-info">
+        <div className="section__info">
           Water washing is a liquid-liquid extraction step, and is also an essential
           post-processing step of biodiesel. Post-reaction biodiesel contains various
           impurities such as residual catalyst and methanol. Water washing removes
@@ -62,11 +62,11 @@ const tech = () => (
           <Picture url={prefixLink('/img/water.png')} />
         </div>
       </div>
-      <div className="section-container">
-        <div className="section-subhead">
+      <div className="section__container">
+        <div className="section__subhead">
           V. ASTM
         </div>
-        <div className="section-info">
+        <div className="section__info">
           In order to be sold commercially, our biodiesel must pass a series of quality
           tests outlined by ASTM D6751. Currently, we are working to obtain access to a
           gas chromatograph in order to quantify free and total glycerin in our biodiesel
@@ -76,16 +76,15 @@ const tech = () => (
         </div>
       </div>
     </div>
-    <div className="section-2">
+    <div className="section--2">
       <div className="hero">
-        <Picture url={prefixLink('/img/Berkeley 1.jpg')} />
-        <Title text="PILOT PLANT" />
+        <Title text="PILOT PLANT:" />
       </div>
-      <div className="section-container">
-        <div className="section-subhead">
+      <div className="section__container">
+        <div className="section__subhead">
           I. Filtration
         </div>
-        <div className="section-info">
+        <div className="section__info">
           The vegetable oil feedstock that we use is from the Berkeley dining commons
           and was used to cook various foods.  As such, the oil is contaminated with food
           particles of varying sizes that have the potential to harm the vehicles that are
@@ -98,11 +97,11 @@ const tech = () => (
           <Picture url={prefixLink('/img/big bowl.png')} />
         </div>
       </div>
-      <div className="section-container">
-        <div className="section-subhead">
+      <div className="section__container">
+        <div className="section__subhead">
           II. Reactor
         </div>
-        <div className="section-info">
+        <div className="section__info">
           The Reactor Team is mainly concerned with the large-scale transesterification reaction of
           waste cooking oil to Biodiesel and the vessels, tubing, valves, pumps and chemical
           pathways that are involved in creating an efficient and optimal process. The type of
@@ -117,11 +116,11 @@ const tech = () => (
           <Picture url={prefixLink('/img/whitebuc.png')} />
         </div>
       </div>
-      <div className="section-container">
-        <div className="section-subhead">
+      <div className="section__container">
+        <div className="section__subhead">
           III. Improvements for the Future
         </div>
-        <div className="section-info">
+        <div className="section__info">
           As our system further develops, we are investigating innovative ways to increase the
           efficiency and purity of our production of biodiesel. We are hoping to implement two
           major improvements to our process which include the addition of inline mixing as well
@@ -138,20 +137,20 @@ const tech = () => (
           <Picture url={prefixLink('/img/titrationsample.jpg')} />
         </div>
       </div>
-      <div className="section-container">
-        <div className="section-subhead">
+      <div className="section__container">
+        <div className="section__subhead">
           IV. Purifications
         </div>
-        <div className="section-info">
+        <div className="section__info">
           lmao filler things
           <Picture url={prefixLink('/img/titrationsample.jpg')} />
         </div>
       </div>
-      <div className="section-container">
-        <div className="section-subhead">
+      <div className="section__container">
+        <div className="section__subhead">
           V. Safety/Operations
         </div>
-        <div className="section-info">
+        <div className="section__info">
           We are committed to ensuring the health and safety of all our
           team members working on our production process. We have trained
           our team extensively in good safety practices and implemented
@@ -170,7 +169,6 @@ const tech = () => (
           purposes or product/waste collection, is also important to us. With those mindsets, we
           create safe plans for our team’s logistical needs.
           <Picture url={prefixLink('/img/blackbuc.png')} />
-
         </div>
       </div>
     </div>

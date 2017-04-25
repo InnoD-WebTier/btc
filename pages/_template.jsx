@@ -73,6 +73,8 @@ export default class IndexContainer extends React.Component {
                 TECH
               </Link>
               <Link
+                to={prefixLink('/tech/')}
+
                 to={prefixLink('/team/')}
                 className="link"
                 onClick={this._handleClose}

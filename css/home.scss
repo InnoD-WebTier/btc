@@ -62,7 +62,7 @@
 
         .picture__container {
           width: 100%;
-          padding: 15px;
+          padding: 35px;
           font-family: 'Roboto';
         }
 
@@ -74,6 +74,8 @@
           .picture__overlay, .picture__name, .picture__title {
             display: block;
           }
+
+          .picture__container { padding: 15px; }
 
           .picture__overlay {
             position: absolute;

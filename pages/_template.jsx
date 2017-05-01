@@ -58,10 +58,10 @@ export default class IndexContainer extends React.Component {
             </button>
             <div className="container">
               <div className="container__media">
-                <a href="http://www.facebook.com"><i className="fa fa-facebook"></i></a>
+                <a href="https://www.facebook.com/groups/1518573945132047/"><i className="fa fa-facebook"></i></a>
                 <a href="http://www.instagram.com"><i className="fa fa-instagram"></i></a>
                 <a href="http://www.twitter.com"><i className="fa fa-twitter"></i></a>
-                <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">
+                <a href="mailto:biofuelstechnology@gmail.com?Subject=BTC" target="_top">
                   <i className="fa fa-envelope"></i>
                 </a>
               </div>
@@ -75,7 +75,7 @@ export default class IndexContainer extends React.Component {
               <Link
                 to={prefixLink('/tech/')}
 
-                to={prefixLink('/team/')}
+                to={prefixLink('/officers/')}
                 className="link"
                 onClick={this._handleClose}
               >

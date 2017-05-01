@@ -8,16 +8,13 @@
 .officers {
   width: 80%;
   margin: auto;
-  .hero {
-    width: 100%;
 
-    .picture {
-      img {
-        display: block;
-        width: 100%;
-        height: auto;
-        max-height: 300px;
-      }
+  .picture {
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 300px;
     }
   }
 
@@ -42,6 +39,7 @@
   .picture {
     width: 33%;
     display: inline-block;
+    
     img {
       width: 100%;
       height: auto;

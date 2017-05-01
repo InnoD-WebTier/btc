@@ -2,6 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { prefixLink } from 'gatsby-helpers'; // eslint-disable-line
 import Picture from '../components/Picture';
+import PictureGrid from '../components/PictureGrid';
 import Title from '../components/Title';
 
 const IndexComponent = () => (
@@ -53,10 +54,109 @@ const IndexComponent = () => (
     <div className="section section--partners">
       <div className="section__container">
         <Title text="PARTNERS" />
-        The Biofuels Initiative began in 2012 as a simple idea:
-        turning waste cooking oil from the dining commons into usable biodiesel.
-        Two years later, this idea grew into a proposal project written
-        by four students in their Technical Communications (CBE 185) course.
+        <div className="section__images">
+          <PictureGrid
+            pictures={[{
+              url: prefixLink('/img/logo.png'),
+              name: 'Logo 1',
+              title: '',
+            },
+            {
+              url: prefixLink('/img/logo.png'),
+              name: 'Logo 2',
+              title: '',
+            },
+            {
+              url: prefixLink('/img/logo.png'),
+              name: 'Logo 3',
+              title: '',
+            },
+            {
+              url: prefixLink('/img/logo.png'),
+              name: 'Logo 4',
+              title: '',
+            },
+            {
+              url: prefixLink('/img/logo.png'),
+              name: 'Logo 5',
+              title: '',
+            },
+            {
+              url: prefixLink('/img/logo.png'),
+              name: 'Logo 6',
+              title: '',
+            },
+            {
+              url: prefixLink('/img/logo.png'),
+              name: 'Logo 7',
+              title: '',
+            },
+            {
+              url: prefixLink('/img/logo.png'),
+              name: 'Logo 8',
+              title: '',
+            },
+            {
+              url: prefixLink('/img/logo.png'),
+              name: 'Logo 9',
+              title: '',
+            }]}
+          />
+        </div>
+      </div>
+    </div>
+    <div className="section section--advisors">
+      <div className="section__container">
+        <Title text="ADVISORS" />
+        <div className="section__images advisors">
+          <PictureGrid
+            pictures={[{
+              url: prefixLink('/img/Andrew_Wang.jpg'),
+              name: 'Advisor Name 1',
+              title: '',
+            },
+            {
+              url: prefixLink('/img/Andrew_Wang.jpg'),
+              name: 'Advisor Name 2',
+              title: '',
+            },
+            {
+              url: prefixLink('/img/Andrew_Wang.jpg'),
+              name: 'Advisor Name 3',
+              title: '',
+            },
+            {
+              url: prefixLink('/img/Andrew_Wang.jpg'),
+              name: 'Advisor Name 4',
+              title: '',
+            },
+            {
+              url: prefixLink('/img/Andrew_Wang.jpg'),
+              name: 'Advisor Name 5',
+              title: '',
+            },
+            {
+              url: prefixLink('/img/Andrew_Wang.jpg'),
+              name: 'Advisor Name 6',
+              title: '',
+            },
+            {
+              url: prefixLink('/img/Andrew_Wang.jpg'),
+              name: 'Advisor Name 7',
+              title: '',
+            },
+            {
+              url: prefixLink('/img/Andrew_Wang.jpg'),
+              name: 'Advisor Name 8',
+              title: '',
+            },
+            {
+              url: prefixLink('/img/Andrew_Wang.jpg'),
+              name: 'Advisor Name 9',
+              title: '',
+            }]}
+          />
+        </div>
       </div>
     </div>
   </div>

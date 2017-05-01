@@ -31,7 +31,7 @@ const tech = () => (
           the efficiency of the transesterification reaction. FFAs can be removed from the
           reaction by titration with alkaline base. This titration produces soap, which is
           simply the alkaline salt of fatty acids, and can be more easily removed during processing.
-          <Picture url={prefixLink('/img/titrationsample.jpg')} />
+          <Picture url={prefixLink('/img/titration.jpg')} />
         </div>
       </div>
       <div className="section__container">
@@ -72,7 +72,7 @@ const tech = () => (
           gas chromatograph in order to quantify free and total glycerin in our biodiesel
           samples. This would give us an idea on the extent of conversion in our
           transesterification reaction.
-          <Picture url={prefixLink('/img/titrationsample.jpg')} />
+          <Picture url={prefixLink('/img/titration.jpg')} />
         </div>
       </div>
     </div>
@@ -134,7 +134,7 @@ const tech = () => (
           reaction in order to push the equilibrium transesterification reaction towards the
           right (products). In doing so, we are hoping to increase our conversion and optimize
           our process efficiency.
-          <Picture url={prefixLink('/img/titrationsample.jpg')} />
+          <Picture url={prefixLink('/img/titration.jpg')} />
         </div>
       </div>
       <div className="section__container">
@@ -143,7 +143,7 @@ const tech = () => (
         </div>
         <div className="section__info">
           lmao filler things
-          <Picture url={prefixLink('/img/titrationsample.jpg')} />
+          <Picture url={prefixLink('/img/titration.jpg')} />
         </div>
       </div>
       <div className="section__container">
